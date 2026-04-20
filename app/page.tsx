@@ -1,7 +1,7 @@
 import { supabase } from '@/lib/supabase/client';
 import AddLoanForm from '@/components/AddLoanForm';
 import LoanCard from '@/components/LoanCard';
-import { DollarSign } from 'lucide-react';
+import { Banknote } from 'lucide-react';
 
 export const revalidate = 0;
 
@@ -32,13 +32,13 @@ export default async function Dashboard() {
         <div className="relative z-10">
           <p className="text-sm font-medium text-slate-400 mb-1">Total Lent Out</p>
           <div className="flex items-baseline gap-1">
-            <span className="text-2xl font-medium text-slate-400">$</span>
+            <span className="text-xl font-medium text-slate-400 mr-1">LKR</span>
             <span className="text-5xl font-bold tracking-tight">
               {totalLent.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
             </span>
           </div>
         </div>
-        <DollarSign className="absolute -right-4 -bottom-4 w-32 h-32 text-slate-800 opacity-50" />
+        <Banknote className="absolute -right-4 -bottom-4 w-32 h-32 text-slate-800 opacity-50" />
       </section>
 
       {/* Add Loan Form Section */}

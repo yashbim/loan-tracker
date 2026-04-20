@@ -1,7 +1,7 @@
 'use client';
 
 import { markAsPaid } from '@/lib/actions/loan-actions';
-import { Calendar, User, DollarSign, CheckCircle } from 'lucide-react';
+import { Calendar, User, Banknote, CheckCircle } from 'lucide-react';
 
 interface Loan {
   id: string;
@@ -22,7 +22,7 @@ export default function LoanCard({ loan }: { loan: Loan }) {
           <h3 className="font-semibold text-slate-900">{loan.borrower_name}</h3>
         </div>
         <div className="flex items-center gap-1 font-bold text-slate-900">
-          <DollarSign className="w-4 h-4" />
+          <span className="text-xs text-slate-500 font-medium mr-0.5">LKR</span>
           {Number(loan.amount).toLocaleString()}
         </div>
       </div>

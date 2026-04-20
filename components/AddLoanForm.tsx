@@ -37,7 +37,7 @@ export default function AddLoanForm() {
         </div>
         <div>
           <label htmlFor="amount" className="block text-sm font-medium text-slate-700 mb-1">
-            Amount ($)
+            Amount (LKR)
           </label>
           <input
             type="number"
