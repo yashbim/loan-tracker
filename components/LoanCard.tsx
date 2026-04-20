@@ -13,6 +13,8 @@ interface Loan {
   description: string | null;
 }
 
+const CURRENCY = process.env.NEXT_PUBLIC_CURRENCY || 'LKR';
+
 export default function LoanCard({ loan }: { loan: Loan }) {
   return (
     <div className="p-4 bg-white border border-slate-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
@@ -22,7 +24,7 @@ export default function LoanCard({ loan }: { loan: Loan }) {
           <h3 className="font-semibold text-slate-900">{loan.borrower_name}</h3>
         </div>
         <div className="flex items-center gap-1 font-bold text-slate-900">
-          <span className="text-xs text-slate-500 font-medium mr-0.5">LKR</span>
+          <span className="text-xs text-slate-500 font-medium mr-0.5">{CURRENCY}</span>
           {Number(loan.amount).toLocaleString()}
         </div>
       </div>

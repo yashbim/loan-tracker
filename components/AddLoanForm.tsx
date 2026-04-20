@@ -4,6 +4,8 @@ import { addLoan } from '@/lib/actions/loan-actions';
 import { useRef, useState } from 'react';
 import { PlusCircle } from 'lucide-react';
 
+const CURRENCY = process.env.NEXT_PUBLIC_CURRENCY || 'LKR';
+
 export default function AddLoanForm() {
   const formRef = useRef<HTMLFormElement>(null);
   const [loading, setLoading] = useState(false);
@@ -37,7 +39,7 @@ export default function AddLoanForm() {
         </div>
         <div>
           <label htmlFor="amount" className="block text-sm font-medium text-slate-700 mb-1">
-            Amount (LKR)
+            Amount ({CURRENCY})
           </label>
           <input
             type="number"

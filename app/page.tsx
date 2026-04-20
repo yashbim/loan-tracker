@@ -5,6 +5,8 @@ import { Banknote } from 'lucide-react';
 
 export const revalidate = 0;
 
+const CURRENCY = process.env.NEXT_PUBLIC_CURRENCY || 'LKR';
+
 export default async function Dashboard() {
   const { data: loans, error } = await supabase
     .from('loans')
@@ -32,7 +34,7 @@ export default async function Dashboard() {
         <div className="relative z-10">
           <p className="text-sm font-medium text-slate-400 mb-1">Total Lent Out</p>
           <div className="flex items-baseline gap-1">
-            <span className="text-xl font-medium text-slate-400 mr-1">LKR</span>
+            <span className="text-xl font-medium text-slate-400 mr-1">{CURRENCY}</span>
             <span className="text-5xl font-bold tracking-tight">
               {totalLent.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
             </span>
