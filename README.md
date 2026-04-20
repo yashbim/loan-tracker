@@ -35,12 +35,13 @@ ALTER TABLE loans DISABLE ROW LEVEL SECURITY;
 
 ### 2. Environment Variables
 
-Rename `.env.example` to `.env.local` and add your Supabase credentials:
+Create `.env.local` and add your Supabase credentials along with the preffered currency:
 
 | Variable | Description |
 |---|---|
 | `NEXT_PUBLIC_SUPABASE_URL` | Your Project URL |
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Your `anon` `public` API key |
+| `NEXT_PUBLIC_CURRENCY` | Your preffered currency ($, ₹, £, etc.) |
 
 ### 3. Installation
 
