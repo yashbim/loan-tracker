@@ -1,7 +1,8 @@
 import { supabase } from '@/lib/supabase/client';
 import AddLoanForm from '@/components/AddLoanForm';
 import LoanCard from '@/components/LoanCard';
-import { Banknote } from 'lucide-react';
+import { Banknote, LogOut } from 'lucide-react';
+import { logout } from '@/lib/actions/auth-actions';
 
 export const revalidate = 0;
 
@@ -27,6 +28,15 @@ export default async function Dashboard() {
           <h1 className="text-2xl font-bold tracking-tight text-slate-900">Loan Tracker</h1>
           <p className="text-sm text-slate-500">Track your personal loans effortlessly.</p>
         </div>
+        <form action={logout}>
+          <button
+            type="submit"
+            className="p-2 text-slate-400 hover:text-slate-600 hover:bg-slate-50 rounded-lg transition-colors"
+            title="Logout"
+          >
+            <LogOut className="w-5 h-5" />
+          </button>
+        </form>
       </header>
 
       {/* Summary Section */}
