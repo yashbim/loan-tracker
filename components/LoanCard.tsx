@@ -32,21 +32,21 @@ export default function LoanCard({ loan }: { loan: Loan }) {
       <div className="space-y-2 text-sm text-slate-500 mb-4">
         <div className="flex items-center gap-2">
           <Calendar className="w-4 h-4" />
-          <span>Lent on: {new Date(loan.loan_date).toLocaleDateString()}</span>
+          <span>Mistake made on: {new Date(loan.loan_date).toLocaleDateString()}</span>
         </div>
         {loan.due_date && (
           <div className="flex items-center gap-2">
             <Calendar className="w-4 h-4 text-red-400" />
-            <span className="text-red-600 font-medium">Due: {new Date(loan.due_date).toLocaleDateString()}</span>
+            <span className="text-red-600 font-medium">The Deadline of Broken Promises: {new Date(loan.due_date).toLocaleDateString()}</span>
           </div>
         )}
         {loan.description && (
-          <p className="mt-2 text-slate-600 italic">"{loan.description}"</p>
+          <p className="mt-2 text-slate-600 italic">"The Excuse: {loan.description}"</p>
         )}
       </div>
 
       <form action={async () => {
-        if (confirm('Mark this loan as paid?')) {
+        if (confirm('Did they actually pay you back or are you just hallucinating?')) {
           await markAsPaid(loan.id);
         }
       }}>
@@ -55,7 +55,7 @@ export default function LoanCard({ loan }: { loan: Loan }) {
           className="w-full flex items-center justify-center gap-2 bg-slate-900 text-white py-2 px-4 rounded-md hover:bg-slate-800 transition-colors text-sm font-medium"
         >
           <CheckCircle className="w-4 h-4" />
-          Mark as Paid
+          IT'S A MIRACLE! THEY PAID!
         </button>
       </form>
     </div>

@@ -13,14 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Loan Tracker",
-  description: "Simple personal loan tracking application.",
+  title: "Financial Mistake Tracker",
+  description: "Documenting every time you were too nice for your own good.",
   icons: {
     icon: "/icon.svg",
     apple: "/apple-icon.svg",
   },
   appleWebApp: {
-    title: "Loan Tracker",
+    title: "Debt Collector 3000",
     statusBarStyle: "default",
     capable: true,
   },

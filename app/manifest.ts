@@ -2,9 +2,9 @@ import { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Loan Tracker',
-    short_name: 'Loans',
-    description: 'Track your personal loans effortlessly',
+    name: 'Financial Mistake Tracker',
+    short_name: 'Mistakes',
+    description: 'Documenting every time you were too nice for your own good.',
     start_url: '/',
     display: 'standalone',
     background_color: '#ffffff',

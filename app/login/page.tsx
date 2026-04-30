@@ -29,9 +29,9 @@ export default function LoginPage() {
           <div className="mx-auto h-12 w-12 bg-slate-900 rounded-xl flex items-center justify-center mb-4">
             <Lock className="h-6 w-6 text-white" />
           </div>
-          <h1 className="text-3xl font-bold tracking-tight text-slate-900">Protected Access</h1>
+          <h1 className="text-3xl font-bold tracking-tight text-slate-900">The Gates of Financial Despair</h1>
           <p className="mt-2 text-sm text-slate-500">
-            Please enter your password to continue.
+            Enter the secret code to see how much you've been taken advantage of.
           </p>
         </div>
 
@@ -42,7 +42,7 @@ export default function LoginPage() {
                 htmlFor="password"
                 className="block text-sm font-medium text-slate-700"
               >
-                Password
+                The key to your misery
               </label>
               <div className="mt-1">
                 <input
@@ -59,7 +59,7 @@ export default function LoginPage() {
 
             {error && (
               <div className="bg-red-50 text-red-600 text-sm p-3 rounded-lg border border-red-100 text-center">
-                {error}
+                {error} (Wrong key! The misery is safe for now.)
               </div>
             )}
 
@@ -68,13 +68,13 @@ export default function LoginPage() {
               disabled={loading}
               className="w-full py-3 px-4 bg-slate-900 hover:bg-slate-800 text-white font-semibold rounded-xl transition-colors disabled:opacity-50"
             >
-              {loading ? 'Verifying...' : 'Unlock'}
+              {loading ? 'Calculating Losses...' : 'Face the Truth'}
             </button>
           </form>
         </div>
 
         <p className="text-center text-xs text-slate-400">
-          Personal Loan Tracker &bull; Secured with Simple Auth
+          Debt Trap Simulator &bull; Secured with Simple Auth
         </p>
       </div>
     </main>

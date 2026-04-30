@@ -1,15 +1,15 @@
-# 💸 Personal Loan Tracker (LKR)
+# 💸 Financial Mistake Tracker (The "I'm Too Nice" Edition)
 
-A minimalist, mobile-friendly personal loan tracking application built with **Next.js 15**, **Tailwind CSS**, and **Supabase**.
+A minimalist, mobile-friendly application for documenting exactly how much money you've "lent" to people who will probably never pay you back. Built with **Next.js 15**, **Tailwind CSS**, and **Supabase** (to store your regrets).
 
-## 🚀 Features
+## 🚀 Features of Despair
 
-- **Total Summary:** Instantly see the total amount you've lent out in LKR.
-- **Add Loans:** Quickly record new loans with borrower names, dates, and optional descriptions.
-- **Manage Loans:** Track active loans and mark them as paid with a single click.
-- **Mobile First:** Designed to be used on the go.
+- **Total Summary:** Instantly see the total amount of money that has escaped your bank account.
+- **Record Tragedies:** Quickly document new loans with the name of the culprit, the day of regret, and their creative excuses.
+- **Manage Victims:** Track active "loans" and wait for a miracle to mark them as paid.
+- **Mobile First:** Because you need to record the mistake immediately after you hand over the cash.
 
-## 🛠️ Setup Instructions
+## 🛠️ Setup Instructions (If you still have money for electricity)
 
 ### 1. Database (Supabase)
 
