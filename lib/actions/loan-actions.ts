@@ -44,3 +44,22 @@ export async function markAsPaid(id: string) {
   revalidatePath('/');
   return { success: true };
 }
+
+export async function updateLoanAmount(id: string, newAmount: number) {
+  if (newAmount <= 0) {
+    return markAsPaid(id);
+  }
+
+  const { error } = await supabase
+    .from('loans')
+    .update({ amount: newAmount })
+    .eq('id', id);
+
+  if (error) {
+    console.error('Error updating loan amount:', error);
+    return { error: error.message };
+  }
+
+  revalidatePath('/');
+  return { success: true };
+}

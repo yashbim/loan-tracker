@@ -34,7 +34,7 @@ export default function AddLoanForm() {
             id="borrower_name"
             name="borrower_name"
             required
-            placeholder="Who's robbing you today?"
+            placeholder="Who&apos;s robbing you today?"
             className="w-full px-3 py-2 border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-slate-500 focus:border-slate-500 text-sm"
           />
         </div>
@@ -70,7 +70,7 @@ export default function AddLoanForm() {
         </div>
         <div>
           <label htmlFor="due_date" className="block text-sm font-medium text-slate-700 mb-1">
-            The Day They'll Ignore Your Calls
+            The Day They&apos;ll Ignore Your Calls
           </label>
           <input
             type="date"
@@ -89,7 +89,7 @@ export default function AddLoanForm() {
           id="description"
           name="description"
           rows={2}
-          placeholder="e.g. 'I'll pay you back next Friday, I swear!'"
+          placeholder="e.g. &apos;I&apos;ll pay you back next Friday, I swear!&apos;"
           className="w-full px-3 py-2 border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-slate-500 focus:border-slate-500 text-sm"
         />
       </div>

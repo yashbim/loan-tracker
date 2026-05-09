@@ -42,7 +42,7 @@ export default async function Dashboard() {
       {/* Summary Section */}
       <section className="bg-slate-900 text-white p-6 rounded-2xl shadow-xl border border-slate-800 relative overflow-hidden">
         <div className="relative z-10">
-          <p className="text-sm font-medium text-slate-400 mb-1">Total Amount You'll Probably Never See Again</p>
+          <p className="text-sm font-medium text-slate-400 mb-1">Total Amount You&apos;ll Probably Never See Again</p>
           <div className="flex items-baseline gap-1">
             <span className="text-xl font-medium text-slate-400 mr-1">{CURRENCY}</span>
             <span className="text-5xl font-bold tracking-tight">

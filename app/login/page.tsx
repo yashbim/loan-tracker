@@ -31,7 +31,7 @@ export default function LoginPage() {
           </div>
           <h1 className="text-3xl font-bold tracking-tight text-slate-900">The Gates of Financial Despair</h1>
           <p className="mt-2 text-sm text-slate-500">
-            Enter the secret code to see how much you've been taken advantage of.
+            Enter the secret code to see how much you&apos;ve been taken advantage of.
           </p>
         </div>
 
